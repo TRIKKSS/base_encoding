@@ -40,6 +40,8 @@ func main() {
 	decodeStringB32hex, err := base.DecodeB32hex("DLSN6T3ID5N6E===")
 	checkErr(err)
 	decodeStringB16, err := base.DecodeB16("6D79737472696E67")
+	
+	fmt.Printf("%s\n%s\n%s\n%s\n%s\n", decodeStringB64, decodeStringB64url, decodeStringB32, decodeStringB32hex, decodeStringB16)
 }
 
 func checkErr(err error) {
