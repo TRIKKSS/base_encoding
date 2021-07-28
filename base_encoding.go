@@ -88,7 +88,7 @@ func EncodeB32(plainText string) string {
 	return result
 }
 
-func EncodeB32Hex(plainText string) string {
+func EncodeB32hex(plainText string) string {
 	data := Padding(Binary(plainText), 5, "0")
 	char := ChunkString(data, 5)
 	var EncodedValueArray []int64
